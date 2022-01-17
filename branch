@@ -1,0 +1,89 @@
+/*#include<stdio.h>
+//求n的阶乘
+int Fac(int t)
+{
+	if (t <= 1)
+		return 1;
+	else
+		return t * Fac(t - 1);
+
+}
+int main()
+{
+	int n = 0;
+	int ret = 0;
+	scanf("%d", &n);
+	ret = Fac(n);
+	printf("%d\n", ret);
+	return 0;
+}*/
+/*#include<stdio.h>
+//描述第n个斐波那契数列的数
+//1 1 2 3 5 8 13 21 34 55
+int Fib(int n)
+{
+//	if (n <= 2)
+	//	return 1;
+	//else
+		//return Fib(n - 1) + Fib(n - 2);
+	//递归计算结果缓慢，效率低
+	int a = 1;
+	int b = 1;
+	int c = 1;
+	while (n >2)
+	{
+		c = a + b;
+		a = b;
+		b = c;
+		n--;
+	}
+	return c;
+}
+int main()
+{
+	int n = 0;
+	int ret = 0;
+	scanf("%d", &n);
+	ret = Fib(n);
+	printf("ret=%d\n", ret);
+   return 0;
+}*/
+//从键盘上输入一个整数，判断是否为素数。
+//例：
+//（1）输入：2   输出：Yes
+//（2）输入：4    输出：No
+//（3）输入：19   输出：Yes
+/*#include<stdio.h>
+#include<math.h>
+int isPrime(int n)//函数的定义
+{
+	int j = 0;
+	for (j = 2; j <= sqrt(n); j++)
+	{
+		if (n%j == 0)
+			return 0;
+	}
+	return 1;
+}
+int main()
+{
+	int isPrime(int xxx);//函数声明
+	int n;
+
+	do
+	{
+		//printf("Please input a number n(n>=2):");
+		scanf("%d", &n);
+	} while (n < 2);
+
+	if (isPrime(n))
+	{
+		printf("Yes");
+	}
+	else
+	{
+		printf("No");
+	}
+
+	return 0;
+}*/
